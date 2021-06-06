@@ -1,0 +1,5 @@
+Successful execution methods:
+(1) Ctrl + Shift + F10
+(2) Shift + F10
+(3) (.\mvnw clean package) -> java -jar target\demo-0.0.1-SNAPSHOT.jar
+(4) (.\mvnw clean package) -> .\mvnw spring-boot:run
