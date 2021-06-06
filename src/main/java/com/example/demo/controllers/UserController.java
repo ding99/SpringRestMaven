@@ -24,14 +24,12 @@ public class UserController {
     @GetMapping
     public List<User> findAllUsers(){
         List<User> users = (List<User>) userRepository.findAll();
-        System.out.println("count: " + users.stream().count());
         return users;
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> findUserById(@PathVariable(value = "id") int id){
+    public ResponseEntity<User> findUserById(@PathVariable(value = "id") long id){
         Optional<User> user = userRepository.findById(id);
-        System.out.println("name: " + user);
 
         if(user.isPresent()){
             return ResponseEntity.ok().body(user.get());
