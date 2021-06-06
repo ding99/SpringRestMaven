@@ -38,7 +38,7 @@ public class UserController {
         }
     }
 
-    @PostMapping
+    @PostMapping()
     public User saveUser(@Validated @RequestBody User user){
         return userRepository.save(user);
     }
