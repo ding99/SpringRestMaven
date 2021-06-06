@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.example.back.models;
 
 import javax.persistence.*;
 

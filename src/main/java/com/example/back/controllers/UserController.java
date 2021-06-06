@@ -1,7 +1,7 @@
-package com.example.demo.controllers;
+package com.example.back.controllers;
 
-import com.example.demo.models.User;
-import com.example.demo.repo.UserRepository;
+import com.example.back.models.User;
+import com.example.back.repo.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
